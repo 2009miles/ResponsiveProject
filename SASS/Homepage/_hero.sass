@@ -1,0 +1,102 @@
+.hero
+    position: relative
+    top: 0px
+    width: 100%
+    height: 620px
+    background-color: #aaaaaa
+    background-blend-mode: multiply
+    background-size: cover
+    background-position: center
+
+    .heroContent
+        position: relative
+        height: 100%
+        max-width: 85vw
+        text-align: center
+
+        h1
+            font-size: 72px
+            text-transform: uppercase
+            color: white
+            padding-top: calc(620px * 0.37)
+
+            +mediaQuery(0,975px)
+                padding-top: calc(620px * 0.302)
+
+            +mediaQuery(0,523px)
+                padding-top: calc(620px * 0.216)
+
+            +mediaQuery(0,411px)
+                padding-top: calc(620px * 0.259)
+
+            +mediaQuery(0,411px)
+                padding-top: calc(620px * 0.30)
+                font-size: 50px
+
+        p
+            font-size: 24px
+            margin: calc(620px * 0.056) 0 calc(620px * 0.108) 0
+            font-style: italic
+            color: $heroGray01
+
+            +mediaQuery(0,712px)
+                margin-bottom: calc(620px * 0.079)
+
+            +mediaQuery(0,411px)
+                font-size: 18px
+
+        a
+            font-size: 15px
+            background-color: $heroGray02
+            padding: 25px 33px
+            color: white
+            text-transform: uppercase
+            cursor: pointer
+
+            &:hover
+                color: black
+                background-color: white
+
+            +mediaQuery(0,411px)
+                padding: 20px 28px
+                font-size: 12px
+
+    .imageSelectionSquares
+        position: absolute
+        bottom: 10%
+        left: 50%
+        transform: translateX(-45%)
+
+        li
+            display: inline-block
+            margin-right: 8px
+            width: 15px
+            height: 15px
+            border: 1px solid $heroGray03
+            cursor: pointer
+
+            &:hover
+                border: 1px solid white
+                background-color: white
+
+        .active
+            border: 1px solid white
+            background-color: white
+    
+    .arrow
+        display: inline-block
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 40px
+        height: 120px
+        background-color: $heroGray04
+        fill: white
+        cursor: pointer
+
+        &:last-of-type
+            right: 0px
+
+        +mediaQuery(0,860px)
+            width: 20px
+            height: 85px

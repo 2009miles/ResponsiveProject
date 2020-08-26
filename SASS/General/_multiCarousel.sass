@@ -1,0 +1,47 @@
+.multiCarousel
+    font-size: 0
+    display: inline-block
+    position: relative
+    height: 200px
+    width: 100%
+
+    .images
+        overflow: hidden
+        display: inline-block
+        position: relative
+        background-color: $inspirationsBackgroundGray
+        height: 120px
+        width: calc(85vw -  80px)
+
+        img
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            width: calc( (85vw -  80px) / 5)
+
+            +mediaQuery(0,1024px)
+                width: calc( (85vw -  80px) / 4)
+
+            +mediaQuery(0,840px)
+                width: calc( (85vw -  80px) / 3)
+
+            +mediaQuery(0,660px)
+                width: calc( (85vw -  80px) / 2)
+
+            +mediaQuery(0,470px)
+                width: calc( (85vw -  80px))
+
+    .arrow
+        display: inline-block
+        position: relative
+        top: opx
+        max-width: 40px
+        width: 100%
+        max-height: 120px
+        height: 100%
+        background-color: $inspirationsButtonGray
+        fill: black
+        cursor: pointer
+
+        &:last-of-type
+            right: 0px

@@ -1,0 +1,209 @@
+.squares
+    position: relative
+    font-size: 0
+
+    .wrapper
+        height: 951px
+
+        +mediaQuery(0,800px)
+            height: 1170px
+
+    .column
+        vertical-align: top
+        display: inline-block
+        width: 25%
+        height: 887px
+        position: relative
+        top: 33px
+        text-align: center
+        color: white
+
+        +mediaQuery(0,800px)
+            width: 50%
+            height: 600px
+
+        .small
+            height: 295px
+            
+            +mediaQuery(0,800px)
+                height: 200px
+
+        .big
+            height: 590px
+            
+            +mediaQuery(0,800px)
+                height: 400px
+
+        h2
+            font-size: 24px
+            font-weight: 600
+            font-style: bold
+            text-transform: uppercase
+            position: relative
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            +mediaQuery(0,450px)
+                font-size: 18px
+
+        p
+            font-family: $secondaryFont
+            font-style: italic
+
+        .newArrival
+            background-color: $newArrivalSquareGray01
+
+            h2
+                width: 160px
+                max-width: 80%
+
+                
+
+            p
+                position: relative
+                top: 49%
+                left: 50%
+                transform: translate(-50%, -50%)
+                max-width: 160px
+                font-size: 18px
+                font-style: bold
+                text-transform: uppercase
+                max-width: 80%
+
+                +mediaQuery(0,450px)
+                    font-size: 14px
+
+                
+
+        .tweet
+            background-color: $tweetSquareGray
+            
+            div
+                position: relative
+                top: 25%
+                transform: translateY(-50%)
+                
+                +mediaQuery(0,800px)
+                    top: 20%
+
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 10px
+                    left: 50%
+                    transform: translateX(-230%)
+                    width: 20px
+                    height: 2px
+                    background-color: white
+
+                &::after
+                    content: ""
+                    position: absolute
+                    top: 10px
+                    right: 50%
+                    transform: translateX(230%)
+                    width: 20px
+                    height: 2px
+                    background-color: white
+            
+            p
+                width: 80%
+                font-size: 14px
+
+                +mediaQuery(0,450px)
+                    font-size: 12px
+
+                &:first-of-type
+                    position: relative
+                    top: 42%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    line-height: 18px
+                    max-width: 185px
+
+                    +mediaQuery(0,400px)
+                        top: 42%
+                        width: 90%
+
+                &:last-of-type
+                    position: relative
+                    top: 41%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    max-width: 160px
+
+        .pricing
+            background-color: $pricingSquareGray
+
+            h2
+                position: relative
+                top: 42%
+                max-width: 80%
+
+            p
+                position: relative
+                top: 42%
+                font-size: 18px
+                text-transform: uppercase
+                
+
+        .object
+            background-color: $objectSquareGray
+
+            img
+                position: relative
+                top: 105px
+                height: 20px
+
+                +mediaQuery(0,800px)
+                    top: 60px
+
+            h2
+                position: relative
+                top: 46%
+                max-width: 80%
+
+            p
+                font-size: 18px
+                position: relative
+                top: 45.5%
+                font-style: clear
+
+
+        &:first-of-type
+
+            article
+
+                &:last-of-type
+                    background-color: $emptyGray01
+                    
+        &:nth-of-type(2)
+            position: relative
+
+            article
+
+                &:first-of-type
+                    +mediaQuery(0,540px)
+                        p
+                            &:last-of-type
+                                top: 30%
+                    +mediaQuery(0,465px)
+                        p
+                            &:last-of-type
+                                top: 26%
+
+        &:nth-of-type(3)
+
+            article
+
+                &:first-of-type
+                    background-color: $emptyGray02
+                    
+
+        &:last-of-type
+
+            article
+
+                &:last-of-type
+                    background-color: $newArrivalSquareGray02

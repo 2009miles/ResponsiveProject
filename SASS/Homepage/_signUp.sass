@@ -1,0 +1,78 @@
+.signUp
+    margin-top: 106px
+    text-align: center
+    height: 310px
+
+    h2
+        font-size: 36px
+        font-weight: 600
+        margin-bottom: 20px
+
+        +mediaQuery(0,768px)
+            font-size: 30px
+
+        +mediaQuery(0,450px)
+            font-size: 26px
+
+    p
+        font-family: $secondaryFont
+        font-style: italic
+        font-size: 18px
+        letter-spacing: 1px
+        margin: 25px 0px
+        color: $signUpGray01
+
+        +mediaQuery(0,768px)
+            font-size: 16px
+
+        +mediaQuery(0,450px)
+            font-size: 14px
+
+    div
+        height: 55px
+        font-size: 0
+
+        +mediaQuery(0,450px)
+            height: 45px
+
+        input
+            margin-top: 5px
+            height: inherit
+            width: 100%
+            padding-left: 13px
+
+        #signUpInput
+            border: 1px solid $signUpGray02
+            max-width: 475px
+
+            +mediaQuery(0,768px)
+                width: 75%
+
+            +mediaQuery(0,450px)
+                width: 65%
+        
+        #signUpButton
+            background: $orange
+            border: 1px solid $orange
+            color: white
+            max-width: 95px
+            padding-right: 13px
+
+            &:hover
+                background: $signUpButtonGray
+                border: 1px solid $signUpButtonGray
+                cursor: pointer
+        
+        p
+            position: relative
+            top: 20px
+            font-family: $mainFont
+            font-size: 24px
+            font-style: normal
+            text-transform: uppercase
+
+    
+    #signUpFeedbackWarning
+        color: red
+        font-family: $mainFont
+        font-size: 14px

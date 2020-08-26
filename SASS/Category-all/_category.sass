@@ -1,0 +1,58 @@
+.category
+    text-align: center
+
+    h2
+        font-size: 24px
+        font-family: $mainFont
+        text-transform: uppercase
+
+    .category-link
+        display: block
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        width: 71px
+        color: $categoryGray03
+        font-family: $secondaryFont
+        font-size: 14px
+        font-style: italic
+        text-decoration: underline
+        margin: 20px 0px 65px 0px
+
+        &::after
+            content: " "
+            font-size: 0
+            position: absolute
+            top: 38%
+            left: 105%
+            border-bottom: 2.5px solid transparent
+            border-left: 4.5px solid $categoryGray02
+            border-top: 2.5px solid transparent
+
+    .category-products
+        display: inline-block
+
+        img
+            height: 255px
+            width: 205px
+            object-fit: cover
+            border: 1px solid $categoryGray01
+            margin: 0px 55px 0px 55px
+
+            +mediaQuery(0,400px)
+                margin: 0 0
+
+        a
+            h3
+                color: black
+                font-size: 14px
+                font-weight: 600
+                margin: 31px 0px 10px 0px
+
+        p
+            font-size: 14px
+            padding-bottom: 30px
+
+        &:last-of-type
+            p
+                padding-bottom: 70px
