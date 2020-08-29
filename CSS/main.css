@@ -94,6 +94,7 @@ a {
 /* FOOTER */
 /* CATEGORY-ALL */
 /* CATEGORY-MEN */
+/* SHOPPING-CART */
 body {
   font-family: "Lato", sans-serif;
   font-size: 0px;
@@ -1238,7 +1239,7 @@ body {
   width: 100%;
   height: 38.45vw;
   background-color: #fafafa;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 .productDisplay .mainProductImage {
@@ -1257,6 +1258,7 @@ body {
 }
 
 .productDisplay .miniatureImages img {
+  cursor: pointer;
   display: block;
   height: 65px;
   width: 65px;
@@ -1278,6 +1280,7 @@ body {
 @media (min-width: 0) and (max-width: 500px) {
   .productDisplay {
     height: 55vw;
+    margin-bottom: 85px;
   }
   .productDisplay .mainProductImage {
     height: 55vw;
@@ -1296,5 +1299,420 @@ body {
   .productDisplay .miniatureImages img:nth-of-type(2) {
     margin: 0 10px;
   }
+}
+
+.productDetails {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.productDetails .productTitle {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: #303030;
+}
+
+.productDetails .articleNumber {
+  margin: 15px 0;
+  font-style: italic;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.productDetails .productPrice {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #606060;
+}
+
+.productDetails .productDescription {
+  font-size: 14px;
+  margin: 35px 0;
+  color: #606060;
+}
+
+.productDetails .productSizing h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #606060;
+}
+
+.productDetails .productSizing ul {
+  margin: 18px 0;
+}
+
+.productDetails .productSizing ul li {
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 7px;
+  color: #464542;
+  border: 1px solid #959595;
+  margin-right: 14px;
+}
+
+.productDetails .productSizing ul li:last-of-type {
+  margin-right: 0;
+}
+
+.productDetails .addToCart {
+  cursor: pointer;
+  font-size: 14px;
+  margin: 30px 0;
+  padding: 20px 48px;
+  color: white;
+  background-color: #f68236;
+  border: 1px solid #e67429;
+}
+
+.sugestions {
+  border-top: 1px solid #dcdcdc;
+  margin-bottom: 95px;
+}
+
+.sugestions h3 {
+  text-align: center;
+  color: #959595;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-style: italic;
+  padding: 50px 0px 60px 0px;
+}
+
+.moreProducts .moreProductsButton {
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  color: #606060;
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+  padding: 17px 0px;
+}
+
+.moreProducts.productSpacing {
+  margin-bottom: 48px;
+}
+
+.moreProducts .additionalProducts {
+  text-align: center;
+}
+
+.moreProducts .additionalProducts .additional-products {
+  display: inline-block;
+}
+
+.moreProducts .additionalProducts .additional-products img {
+  height: 255px;
+  width: 205px;
+  object-fit: cover;
+  border: 1px solid #dcdcdc;
+  margin: 0px 55px 0px 55px;
+}
+
+@media (min-width: 0) and (max-width: 400px) {
+  .moreProducts .additionalProducts .additional-products img {
+    margin: 0 0;
+  }
+}
+
+.moreProducts .additionalProducts .additional-products a h3 {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 31px 0px 10px 0px;
+}
+
+.moreProducts .additionalProducts .additional-products p {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.shoppingBagTitle {
+  margin: 65px 0;
+}
+
+@media (min-width: 0) and (max-width: 860px) {
+  .shoppingBagTitle {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTitle {
+    margin: 20px 0;
+  }
+}
+
+.shoppingBagTitle .shoppingBagMainTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: #303030;
+}
+
+@media (min-width: 0) and (max-width: 440px) {
+  .shoppingBagTitle .shoppingBagMainTitle {
+    font-size: 30px;
+  }
+}
+
+.shoppingBagTitle .shoppingBagSubtitle {
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #606060;
+  margin: 20px 0;
+}
+
+@media (min-width: 0) and (max-width: 440px) {
+  .shoppingBagTitle .shoppingBagSubtitle {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 439px) {
+  .tableContainer {
+    overflow-x: auto;
+  }
+}
+
+.shoppingBagTable {
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTable {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 440px) {
+  .shoppingBagTable {
+    overflow-x: auto;
+  }
+}
+
+.shoppingBagTable td {
+  position: relative;
+  vertical-align: middle;
+  padding: 10px 10px 10px 10px;
+  color: #303030;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTable td {
+    padding: 10px 5px 10px 5px;
+  }
+}
+
+.shoppingBagTable thead tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.shoppingBagTable thead th {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #aeaeae;
+  padding: 10px 10px 10px 10px;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTable thead th {
+    font-size: 10px;
+    padding: 10px 5px 10px 5px;
+  }
+}
+
+.shoppingBagTable tbody {
+  position: relative;
+}
+
+.shoppingBagTable tbody::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+
+.shoppingBagTable tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.shoppingBagTable tbody .itemImage {
+  border: 1px solid #e5e5e5;
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTable tbody .itemImage {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.shoppingBagTable tbody .itemTitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.shoppingBagTable tbody .itemReference {
+  font-style: italic;
+  color: #8a8a8a;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTable tbody .itemReference {
+    font-size: 10px;
+  }
+}
+
+.shoppingBagTable tbody .itemQty {
+  width: 31px;
+}
+
+.shoppingBagTable tbody .itemQty .currentQty {
+  display: inline-block;
+  position: relative;
+  bottom: 9px;
+  margin-right: 5px;
+}
+
+.shoppingBagTable tbody .itemQty .qtyUpdate {
+  display: inline-block;
+}
+
+.shoppingBagTable tbody .itemQty .qtyButton {
+  display: block;
+}
+
+.shoppingBagTable tbody .itemRemove {
+  position: absolute;
+  left: 20px;
+  bottom: 48px;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shoppingBagTable tbody .itemRemove {
+    bottom: 35px;
+  }
+}
+
+.shoppingBagTable tfoot {
+  background-color: #f9f9f9;
+}
+
+.shoppingBagTable tfoot td {
+  padding: 25px 0 25px 0;
+}
+
+.shoppingBagTable tfoot .totalPrice {
+  position: relative;
+  font-weight: 600;
+  color: #f68236;
+}
+
+.shoppingBagTable tfoot .totalPrice::before {
+  position: absolute;
+  content: "Subtotal:";
+  left: -80px;
+  color: #303030;
+}
+
+.spacingWave {
+  text-align: center;
+  margin-bottom: 10px;
+  height: 170px;
+}
+
+.spacingWave .jaggedWave {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.shippingInformation {
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+
+.shippingInformation .shippingInformationTitle {
+  margin: 65px 0;
+}
+
+@media (min-width: 0) and (max-width: 860px) {
+  .shippingInformation .shippingInformationTitle {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shippingInformation .shippingInformationTitle {
+    margin: 20px 0;
+  }
+}
+
+.shippingInformation .shippingInformationTitle .shippingInformationMainTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: #303030;
+}
+
+@media (min-width: 0) and (max-width: 440px) {
+  .shippingInformation .shippingInformationTitle .shippingInformationMainTitle {
+    font-size: 30px;
+  }
+}
+
+.shippingInformation .shippingInformationTitle .shippingInformationSubtitle {
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #606060;
+  margin: 20px 0;
+}
+
+@media (min-width: 0) and (max-width: 440px) {
+  .shippingInformation .shippingInformationTitle .shippingInformationSubtitle {
+    font-size: 14px;
+  }
+}
+
+.shippingInformation .shippingInformationForm {
+  color: #606060;
+  margin: 0 28% 0 28%;
+}
+
+.shippingInformation .shippingInformationForm label {
+  text-transform: uppercase;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.shippingInformation .shippingInformationForm .deliveryMethod {
+  appearance: none;
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  color: #606060;
+  border: 1px solid #c2c2c2;
+  background: url(https://image.flaticon.com/icons/svg/58/58979.svg) no-repeat right;
+  background-size: 15px 15px;
+  background-position-x: 95%;
 }
 /*# sourceMappingURL=main.css.map */

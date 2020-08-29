@@ -1,0 +1,40 @@
+.moreProducts
+
+    .moreProductsButton
+        cursor: pointer
+        width: 100%
+        text-transform: uppercase
+        color: $categoryGray03
+        border: 1px solid $categoryGray11
+        background-color: $categoryGray11
+        padding: 17px 0px
+
+    &.productSpacing
+        margin-bottom: 48px
+
+    .additionalProducts
+        text-align: center
+
+        .additional-products
+            display: inline-block
+
+            img
+                height: 255px
+                width: 205px
+                object-fit: cover
+                border: 1px solid $categoryGray01
+                margin: 0px 55px 0px 55px
+
+                +mediaQuery(0,400px)
+                    margin: 0 0
+
+            a
+                h3
+                    color: black
+                    font-size: 14px
+                    font-weight: 600
+                    margin: 31px 0px 10px 0px
+
+            p
+                font-size: 14px
+                padding-bottom: 30px

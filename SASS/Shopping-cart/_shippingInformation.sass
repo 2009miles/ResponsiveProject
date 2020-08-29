@@ -1,0 +1,55 @@
+.shippingInformation
+    text-align: center
+    border: 1px solid $shoppingCartGray03
+
+    .shippingInformationTitle
+        margin: 65px 0
+
+        +mediaQuery(0, 860px)
+            margin: 30px 0
+
+        +mediaQuery(0, 600px)
+            margin: 20px 0
+
+        .shippingInformationMainTitle
+            text-align: center
+            text-transform: uppercase
+            font-size: 36px
+            font-weight: 600
+            color: $shoppingCartGray01
+
+            +mediaQuery(0, 440px)
+                font-size: 30px
+
+        .shippingInformationSubtitle
+            text-align: center
+            font-size: 18px
+            font-family: $secondaryFont
+            font-style: italic
+            color:  $shoppingCartGray02
+            margin: 20px 0
+
+            +mediaQuery(0, 440px)
+                font-size: 14px
+
+    .shippingInformationForm
+        color: $shoppingCartGray02
+        margin: 0 28% 0 28%
+
+        label
+            text-transform: uppercase
+            font-size: 12px
+            display: block
+            text-align: left
+            margin-bottom: 15px
+
+        .deliveryMethod
+            appearance: none
+            height: 40px
+            width: 100%
+            background-color: white
+            color: $shoppingCartGray02
+            border: 1px solid $shoppingCartGray07
+            background: url(https://image.flaticon.com/icons/svg/58/58979.svg) no-repeat right
+            background-size: 15px 15px
+            background-position-x: 95%
