@@ -261,14 +261,46 @@
 
         <!--SHIPPING FORM START-->
         <form class="shippingInformationForm">
-            <label for="deliveryMethod">Select delivery method</label>
-            <select class="deliveryMethod" name="deliveryMethod">
+            <label for="shippingDeliveryMethod">Select delivery method</label>
+            <select class="shippingDeliveryMethod" name="shippingDeliveryMethod">
                 <option value="" disabled selected>Select delivery method</option>
                 <option value="DHLInternational">DHL International - €15,00</option>
                 <option value="DHLNational">DHL National - €10,00</option>
                 <option value="CTTCorreioAzul">CTT Correio Azul - €7,50</option>
                 <option value="CTTKickbox">CTT PontapéNaCaixa - €3,50</option>
             </select>
+            <div class="left half">
+                <label for="shippingFirstName">First Name</label>
+                <input type="text" name="shippingFirstName">
+            </div>
+            <div class="right half">
+                <label for="shippingLastName">Last Name</label>
+                <input type="text" name="shippingLastName">
+            </div>
+            <label for="shippingAddressLine1">Address (<span>line 1</span>)</label>
+            <input type="text" name="shippingAddressLine1">
+            <label for="shippingAddressLine2">Address (<span>line 2</span>)</label>
+            <input type="text" name="shippingAddressLine2">
+            <div class="left half">
+                <label for="shippingCity">City</label>
+                <input type="text" name="shippingCity">
+            </div>
+            <div class="right half">
+                <label for="shippingPostalCode">Postal Code</label>
+                <input type="text" name="shippingPostalCode">
+            </div>
+            <div class="left half">
+                <label for="shippingPhoneNumber">Phone Number</label>
+                <input type="text" name="shippingPhoneNumber">
+            </div>
+            <div class="right half">
+                <label for="shippingEmail">E-Mail</label>
+                <input type="text" name="shippingEmail">
+            </div>
+            <div class="useAddressForBilling">
+                <input type="checkbox" class="checkbox">
+                <label for="checkbox" class="checkboxLabel">Use this address for Billing</label>
+            </div>
         </form>
         <!--SHIPPING FORM END-->
         

@@ -1650,18 +1650,6 @@ body {
   margin: 65px 0;
 }
 
-@media (min-width: 0) and (max-width: 860px) {
-  .shippingInformation .shippingInformationTitle {
-    margin: 30px 0;
-  }
-}
-
-@media (min-width: 0) and (max-width: 600px) {
-  .shippingInformation .shippingInformationTitle {
-    margin: 20px 0;
-  }
-}
-
 .shippingInformation .shippingInformationTitle .shippingInformationMainTitle {
   text-align: center;
   text-transform: uppercase;
@@ -1693,7 +1681,13 @@ body {
 
 .shippingInformation .shippingInformationForm {
   color: #606060;
-  margin: 0 28% 0 28%;
+  margin: 0 27.5% 0 27.5%;
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .shippingInformation .shippingInformationForm {
+    margin: 0 15% 0 15%;
+  }
 }
 
 .shippingInformation .shippingInformationForm label {
@@ -1704,15 +1698,79 @@ body {
   margin-bottom: 15px;
 }
 
-.shippingInformation .shippingInformationForm .deliveryMethod {
+.shippingInformation .shippingInformationForm label span {
+  text-transform: none;
+  font-style: italic;
+}
+
+.shippingInformation .shippingInformationForm input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  margin-bottom: 50px;
+  padding-left: 15px;
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .shippingInformation .shippingInformationForm input {
+    padding-left: 5px;
+  }
+}
+
+.shippingInformation .shippingInformationForm .half {
+  display: inline-block;
+  width: 48%;
+}
+
+.shippingInformation .shippingInformationForm .half.right {
+  margin-left: 4%;
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .shippingInformation .shippingInformationForm .half {
+    width: 100%;
+  }
+  .shippingInformation .shippingInformationForm .half.right {
+    margin-left: 0;
+  }
+}
+
+.shippingInformation .shippingInformationForm .shippingDeliveryMethod {
   appearance: none;
   height: 40px;
   width: 100%;
   background-color: white;
-  color: #606060;
   border: 1px solid #c2c2c2;
-  background: url(https://image.flaticon.com/icons/svg/58/58979.svg) no-repeat right;
+  color: #606060;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.154px" height="96.154px" viewBox="0 0 96.154 96.154" style="enable-background:new 0 0 96.154 96.154; fill: %23606060;" xml:space="preserve"><g stroke="%23606060"><path d="M0.561,20.971l45.951,57.605c0.76,0.951,2.367,0.951,3.127,0l45.956-57.609c0.547-0.689,0.709-1.716,0.414-2.61 c-0.061-0.187-0.129-0.33-0.186-0.437c-0.351-0.65-1.025-1.056-1.765-1.056H2.093c-0.736,0-1.414,0.405-1.762,1.056 c-0.059,0.109-0.127,0.253-0.184,0.426C-0.15,19.251,0.011,20.28,0.561,20.971z"/></g></svg>') no-repeat right;
   background-size: 15px 15px;
-  background-position-x: 95%;
+  background-position-x: calc(100% - 15px);
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .shippingInformation .shippingInformationForm .shippingDeliveryMethod {
+    padding-left: 5px;
+  }
+}
+
+.shippingInformation .shippingInformationForm .useAddressForBilling .checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.shippingInformation .shippingInformationForm .useAddressForBilling .checkbox:checked {
+  background-color: red;
+}
+
+.shippingInformation .shippingInformationForm .useAddressForBilling .checkboxLabel {
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+  left: 5px;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
 }
 /*# sourceMappingURL=main.css.map */
