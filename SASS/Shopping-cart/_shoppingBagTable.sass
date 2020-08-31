@@ -50,6 +50,9 @@
         tr
             border-bottom: 1px solid $shoppingCartGray03
 
+            &:hover
+                background-color: $shoppingCartGray06
+
         .itemImage
             border: 1px solid $shoppingCartGray03
             height: 100px
@@ -78,7 +81,7 @@
             .currentQty
                 display: inline-block
                 position: relative
-                bottom: 9px
+                bottom: 10px
                 margin-right: 5px
 
             .qtyUpdate
@@ -86,8 +89,11 @@
 
             .qtyButton
                 display: block
+                cursor: pointer
+                margin-top: 5px
 
         .itemRemove
+            cursor: pointer
             position: absolute
             left: 20px
             bottom: 48px

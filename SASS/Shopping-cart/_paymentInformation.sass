@@ -1,0 +1,91 @@
+.paymentInformation
+    text-align: center
+    border: 1px solid $shoppingCartGray03
+    padding: 100px 0 100px 0
+    margin-bottom: 50px
+
+    .paymentInformationTitle
+        margin-bottom: 65px
+
+        .paymentInformationMainTitle
+            text-transform: uppercase
+            font-size: 36px
+            font-weight: 600
+            color: $shoppingCartGray01
+
+            +mediaQuery(0, 440px)
+                font-size: 30px
+
+        .paymentInformationSubtitle
+            font-size: 18px
+            font-family: $secondaryFont
+            font-style: italic
+            color:  $shoppingCartGray02
+            margin: 20px 0
+
+            +mediaQuery(0, 440px)
+                font-size: 14px
+
+    .paymentCosts
+        font-family: $secondaryFont 
+        font-size: 18px
+        color: $shoppingCartGray02
+        margin-bottom: 60px
+
+        div
+
+            &:last-of-type
+                color: $orange
+
+            h3, p
+                display: inline-block
+                width: 30%
+                margin-bottom: 10px
+
+            h3
+                text-align: right
+                padding-right: 10px
+
+            p
+                text-align: left 
+                padding-left: 10px
+
+            
+
+    .paymentInformationForm
+        color: $shoppingCartGray02
+        margin: 0 27.5% 0 27.5%
+
+        +mediaQuery(0, 800px)
+            margin: 0 15% 0 15%
+
+        label
+            text-transform: uppercase
+            font-size: 12px
+            display: block
+            text-align: left
+            margin-bottom: 15px
+
+        .paymentMethod
+            appearance: none
+            height: 40px
+            width: 100%
+            background-color: white
+            border: 1px solid $shoppingCartGray07
+            color: $shoppingCartGray02
+            margin-bottom: 50px
+            padding-left: 15px
+            background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.154px" height="96.154px" viewBox="0 0 96.154 96.154" style="enable-background:new 0 0 96.154 96.154; fill: %23606060;" xml:space="preserve"><g stroke="%23606060"><path d="M0.561,20.971l45.951,57.605c0.76,0.951,2.367,0.951,3.127,0l45.956-57.609c0.547-0.689,0.709-1.716,0.414-2.61 c-0.061-0.187-0.129-0.33-0.186-0.437c-0.351-0.65-1.025-1.056-1.765-1.056H2.093c-0.736,0-1.414,0.405-1.762,1.056 c-0.059,0.109-0.127,0.253-0.184,0.426C-0.15,19.251,0.011,20.28,0.561,20.971z"/></g></svg>') no-repeat right
+            background-size: 15px 15px
+            background-position-x: calc(100% - 15px)
+
+            +mediaQuery(0, 800px)
+                padding-left: 5px
+
+.orderConfirmationInput
+    height: 40px
+    width: 18%
+    min-width: 100px
+    background-color: $orange
+    border: 1px solid $darkOrange
+    color: white

@@ -9,7 +9,7 @@ for(let i=0;i<productImages.length;i++){
             for(let j=0;j<productImages.length;j++){
                 productImages[j].classList.remove('active');
             }
-            productDisplayImage.src = `../Images/Category-men/mainProductImage${i}.jpg`;
+            productDisplayImage.src = `../Images/Details/mainProductImage${i}.jpg`;
             productImages[i].classList.add('active');
         }
     });
