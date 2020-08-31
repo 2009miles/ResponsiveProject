@@ -61,7 +61,7 @@
                         <article class="basketPopup loggedOut">
                             <div class="container">
                                 <div class="basketPopupItem">
-                                    <img src="../Images/Inspirations/blazer.jpg" alt="">
+                                    <img src="../Images/Inspirations/blazer.jpg" alt="woman in blazer">
                                     <div class="basketPopupItemData">
                                         <p class="basketItem">Floral Plimsoll</p>
                                         <p class="basktetItemprice">€<span>99,95</span></p>
@@ -71,7 +71,7 @@
                             </div>
                             <div class="container">
                                 <div class="basketPopupItem">
-                                    <img src="../Images/Inspirations/blazer.jpg" alt="">
+                                    <img src="../Images/Inspirations/blazer.jpg" alt="woman in blazer">
                                     <div class="basketPopupItemData">
                                         <p class="basketItem">Coated 5 Pocket Trousers</p>
                                         <p class="basktetItemprice">€<span>99,95</span></p>
@@ -127,7 +127,7 @@
                     <!--TABLE CONTENT ROW START-->
                     <tr>
                         <td>
-                            <img src="../Images/Shopping-cart/womanInBlazer.jpg" alt="" class="itemImage">
+                            <img src="../Images/Shopping-cart/womanInBlazer.jpg" alt="woman in blazer" class="itemImage">
                         </td>
                         <td>
                             <h3 class="itemTitle">Floral Plimsoll</h3>
@@ -166,7 +166,7 @@
                     <!--TABLE CONTENT ROW START-->
                     <tr>
                         <td>
-                            <img src="../Images/Shopping-cart/womanInBlazer.jpg" alt="" class="itemImage">
+                            <img src="../Images/Shopping-cart/womanInBlazer.jpg" alt="woman in blazer" class="itemImage">
                         </td>
                         <td>
                             <h3 class="itemTitle">Coated 5 Pocket Trousers</h3>
@@ -205,7 +205,7 @@
                     <!--TABLE CONTENT ROW START-->
                     <tr>
                         <td>
-                            <img src="../Images/Shopping-cart/womanInBlazer.jpg" alt="" class="itemImage">
+                            <img src="../Images/Shopping-cart/womanInBlazer.jpg" alt="woman in blazer" class="itemImage">
                         </td>
                         <td>
                             <h3 class="itemTitle">Oversized Studio Blouse</h3>
@@ -281,7 +281,7 @@
         <!--SHIPPING FORM START-->
         <form class="shippingInformationForm">
             <label for="shippingDeliveryMethod">Select delivery method</label>
-            <select class="shippingDeliveryMethod" name="shippingDeliveryMethod">
+            <select class="shippingDeliveryMethod required" name="shippingDeliveryMethod">
                 <option value="" disabled selected>Select delivery method</option>
                 <option value="DHLInternational">DHL International - €15,00</option>
                 <option value="DHLNational">DHL National - €10,00</option>
@@ -290,34 +290,34 @@
             </select>
             <div class="left half">
                 <label for="shippingFirstName">First Name</label>
-                <input type="text" name="shippingFirstName">
+                <input type="text" name="shippingFirstName" class="shippingFirstName required">
             </div>
             <div class="right half">
                 <label for="shippingLastName">Last Name</label>
-                <input type="text" name="shippingLastName">
+                <input type="text" name="shippingLastName" class="shippingLastName required">
             </div>
             <label for="shippingAddressLine1">Address (<span>line 1</span>)</label>
-            <input type="text" name="shippingAddressLine1">
+            <input type="text" name="shippingAddressLine1" class="shippingAddressLine1 required">
             <label for="shippingAddressLine2">Address (<span>line 2</span>)</label>
-            <input type="text" name="shippingAddressLine2">
+            <input type="text" name="shippingAddressLine2" class="shippingAddressLine2">
             <div class="left half">
                 <label for="shippingCity">City</label>
-                <input type="text" name="shippingCity">
+                <input type="text" name="shippingCity" class="shippingCity required">
             </div>
             <div class="right half">
                 <label for="shippingPostalCode">Postal Code</label>
-                <input type="text" name="shippingPostalCode">
+                <input type="text" name="shippingPostalCode" class="shippingPostalCode required">
             </div>
             <div class="left half">
                 <label for="shippingPhoneNumber">Phone Number</label>
-                <input type="text" name="shippingPhoneNumber">
+                <input type="text" name="shippingPhoneNumber" class="shippingPhoneNumber required">
             </div>
             <div class="right half">
                 <label for="shippingEmail">E-Mail</label>
-                <input type="text" name="shippingEmail">
+                <input type="text" name="shippingEmail" class="shippingEmail required">
             </div>
             <div class="useAddressForBilling">
-                <input type="checkbox" class="checkbox">
+                <input type="checkbox" class="checkbox" name="billingAddress">
                 <label for="checkbox" class="checkboxLabel">Use this address for Billing</label>
             </div>
         </form>
@@ -362,15 +362,17 @@
         <!--PAYMENT FORM START-->
         <form class="paymentInformationForm">
             <label for="paymentMethod">Select payment method</label>
-            <select class="paymentMethod" name="paymentMethod">
-                <option value="" disabled selected>Select payment method</option>
+            <select class="paymentMethod required" name="paymentMethod">
+                <option value="" disabled selected="selected">Select payment method</option>
                 <option value="CreditCard">Credit Card</option>
                 <option value="wireTransfer">Wire Transfer</option>
                 <option value="PayPal">PayPal</option>
                 <option value="Bitcoin">Bitcoin</option>
             </select>
         </form>
-        <button type="submit" class="orderConfirmationInput">ORDER NOW</button>
+        <button type="submit" class="orderConfirmationInput" onclick="submitForm(event)">ORDER NOW</button>
+        <p class="inactive" id="formFeedback">Thank You</p>
+        <p class="inactive" id="formFeedbackWarning">Fields missing or invalid.</p>
         <!--PAYMENT FORM END-->
 
     </section>
